@@ -18,6 +18,32 @@ font-family:Arial,sans-serif;
 background:#eef4ff;
 }
 
+<nav class="topnav">
+    <a href="index.html">🏠 בית</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">📖 כל הפרקים ▼</button>
+
+        <div class="dropdown-content">
+            <a href="01-vision.html">פרק 1 | חזון הוועד</a>
+            <a href="02-why-me.html">פרק 2 | מדוע לבחור בי</a>
+            <a href="03-worldview.html">פרק 3 | תפיסת עולמי</a>
+            <a href="04-discovery.html">פרק 4 | הרמנו גבה ונדהמנו לגלות</a>
+            <a href="05-conditions.html">פרק 5 | תנאי סף להצלחת הוועד</a>
+            <a href="06-challenges.html">פרק 6 | הבעיות והפתרונות</a>
+            <a href="07-achievements.html">פרק 7 | הישגים</a>
+            <a href="08-goals.html">פרק 8 | יעדים להסכם הבא</a>
+            <a href="09-topics.html">פרק 9 | נושאים בטיפול</a>
+            <a href="10-vote.html">פרק 10 | לפני רגע ההצבעה</a>
+            <a href="11-team.html">פרק 11 | הבחירה בצוות שלנו</a>
+            <a href="12-partners.html">פרק 12 | שותפיי לדרך</a>
+            <a href="13-personal.html">פרק 13 | כמה מילים אישיות</a>
+        </div>
+    </div>
+
+    <a href="13-personal.html">❤️ אודות</a>
+</nav>
+    
 .hero{
 background:
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
@@ -31,7 +57,7 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:40px;
+padding:120px 40px 40px;
 }
 
 .profile{
@@ -110,6 +136,64 @@ gap:25px;
     text-shadow:0 3px 10px rgba(0,0,0,.7);
     margin-bottom:35px !important;
 
+}
+
+.topnav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0B1F3A;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+.topnav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.dropdown{
+    display:inline-block;
+    position:relative;
+}
+
+.dropbtn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    right:0;
+    background:white;
+    min-width:320px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    overflow:hidden;
+}
+
+.dropdown-content a{
+    display:block;
+    color:#0B1F3A;
+    padding:12px 18px;
+    text-align:right;
+    text-decoration:none;
+}
+
+.dropdown-content a:hover{
+    background:#eef4ff;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
 }
     
 footer{
